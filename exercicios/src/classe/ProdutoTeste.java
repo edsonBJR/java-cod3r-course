@@ -8,12 +8,12 @@ public class ProdutoTeste {
 		// Assim como não fazemos o import da classe java.lang
 
 		// Com o construtor explicito com todos os parametros conseguimos instanciar um objeto com apenas uma linha
-		Produto p1 = new Produto("Notebook", 4356.89, 0.25);
+		Produto p1 = new Produto("Notebook", 4356.89);
 		
 		var p2 = new Produto(); // Aqui tempos o objeto p2 por inferência de tipo
 		p2.nome = "Caneta Preta";
 		p2.preco = 12.56;
-		p2.desconto = 0.29;
+		//p2.desconto = 0.29;
 		
 		System.out.println(p1.nome);
 		System.out.println(p2.nome);

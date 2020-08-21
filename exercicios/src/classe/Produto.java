@@ -4,13 +4,14 @@ public class Produto {
 	
 	String nome;
 	double preco;
-	double desconto;
+	//double desconto;
+	static double desconto = 0.25;
 
 	// Declarado de forma explicita o Construtor com um parametro
-	Produto(String nomeInicial, double precoInicial, double descontoInicial){
+	Produto(String nomeInicial, double precoInicial ){
 		nome = nomeInicial;
 		preco = precoInicial;
-		desconto = descontoInicial;
+//		desconto = descontoInicial; No consturtor o atributo não precisa ser informado já que ele está definido
 	}
 	
 	// Declarada de forma explicita o Construtor padrão, ele não tem parametro e nem tem retorno
